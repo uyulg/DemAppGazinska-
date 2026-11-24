@@ -1,0 +1,35 @@
+﻿<Window x:Class="DemAppGazinskaa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ООО «Обувь» — Авторизация"
+        Height="464" Width="406"
+        FontFamily="Times New Roman"
+        Background="White">
+    <Grid>
+        <Image Source="/Icon.JPG" Margin="148,10,159,350" />
+        <TextBlock HorizontalAlignment="Center" Margin="0,128,0,0"
+                   Text="Авторизация" FontSize="18" VerticalAlignment="Top"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="110,171,0,0"
+                   Text="Логин" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Center"
+                 VerticalAlignment="Center" Width="186" Height="30"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="110,266,0,0"
+                   Text="Пароль" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="tbPassword" HorizontalAlignment="Center"
+                     Margin="0,303,0,0" VerticalAlignment="Top"
+                     Width="186" Height="29"/>
+
+        <Button x:Name="LogBt" Content="Войти"
+                HorizontalAlignment="Center" Margin="0,358,0,0"
+                VerticalAlignment="Top" Height="31" Width="186"
+                Background="#00FA9A" BorderBrush="#00FA9A"
+                Click="LogBt_Click"/>
+
+        <TextBlock HorizontalAlignment="Center" Margin="0,400,0,0"
+                   VerticalAlignment="Top">
+            <Hyperlink Click="Guest_Click">Войти как гость</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>
